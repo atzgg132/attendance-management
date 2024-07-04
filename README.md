@@ -1,9 +1,8 @@
-
 ---
 
 # 📚 Attendance Management System
 
-Hey everyone, it’s **Gc** here!
+Hey everyone, it’s **atz** here!
 
 I'm thrilled to share an exciting update on our Attendance Management System. We've created a robust web application using the MERN stack (MongoDB, Express.js, React.js, Node.js) with Firebase Authentication and Storage. This system streamlines the management of student attendance, making it easier than ever to track, update, and export attendance records.
 
@@ -72,8 +71,8 @@ The Attendance Management System is a web application built using the MERN stack
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/Guru-1205/attendance-management-system.git
-    cd attendance-management-system
+    git clone https://github.com/atzgg132/attendance-management.git
+    cd attendance-management
     ```
 
 2. **Backend Setup**:
@@ -271,14 +270,14 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 For any questions or suggestions, please reach out to:
 
-- **Name**: Guru Charan K S 
-- **Email**: premguru1045@gmail.com
-- **GitHub**: [Guru-1205](https://github.com/Guru-1205)
+- **Name**: Arnav Bhattacharya 
+- **Email**: arnav.bhattacharya@owasp.org
+- **GitHub**: [atzgg132](https://github.com/atzgg132)
 
 ---
 
 Feel free to further customize the README according to your project's requirements and structure.
 
-Happy coding 
+Happy coding
 
-**Cheers Gc**
+**Cheers atz**
