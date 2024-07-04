@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import Axios from 'axios';
-import './StudentRemoval.css'; // Import your CSS file
+import React, { useState } from "react";
+import Axios from "axios";
+import "./StudentRemoval.css"; // Import your CSS file
 
 const URL1 = process.env.REACT_APP_SERVER_URL;
-const URL="https://mern-attendance-app-api.onrender.com"
+const URL = "https://mern-attendance-app-api.onrender.com";
 const StudentRemovalForm = () => {
-  const [registerNumber, setRegisterNumber] = useState('');
-    const [studentDetails, setStudentDetails] = useState(null);
-    const [deleteMessage, setDeleteMessage] = useState('');
+  const [registerNumber, setRegisterNumber] = useState("");
+  const [studentDetails, setStudentDetails] = useState(null);
+  const [deleteMessage, setDeleteMessage] = useState("");
 
   const handleInputChange = (e) => {
     setRegisterNumber(e.target.value);
@@ -15,10 +15,12 @@ const StudentRemovalForm = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await Axios.get(`${URL}/remove/getStudent/${registerNumber}`);
+      const response = await Axios.get(
+        `${URL}/remove/getStudent/${registerNumber}`
+      );
       setStudentDetails(response.data);
     } catch (error) {
-      console.error('Error fetching student details:', error);
+      console.error("Error fetching student details:", error);
       setStudentDetails(null);
     }
   };
@@ -26,14 +28,14 @@ const StudentRemovalForm = () => {
   const handleDelete = async () => {
     try {
       await Axios.delete(`${URL}/remove/delete/${registerNumber}`);
-        console.log('Student removed successfully');
-        setDeleteMessage("Student Removed successfully");
+      console.log("Student removed successfully");
+      setDeleteMessage("Student Removed successfully");
 
       // Clear the form data and search results
-      setRegisterNumber('');
+      setRegisterNumber("");
       setStudentDetails(null);
     } catch (error) {
-      console.error('Error removing student:', error);
+      console.error("Error removing student:", error);
     }
   };
 
@@ -99,11 +101,10 @@ const StudentRemovalForm = () => {
               </tr>
             </tbody>
           </table>
-                  <button onClick={handleDelete}>Delete Student</button>
-                  
+          <button onClick={handleDelete}>Delete Student</button>
         </div>
-          )}
-          {deleteMessage && <p>{deleteMessage}</p>}
+      )}
+      {deleteMessage && <p>{deleteMessage}</p>}
     </div>
   );
 };
