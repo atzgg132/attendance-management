@@ -8,10 +8,6 @@ I'm thrilled to share an exciting update on our Attendance Management System. We
 
 **If you find this project helpful or interesting, please consider starring the repository on GitHub! Your support is greatly appreciated.**
 
-Feel free to check out my other repositories:
-
- - [AutoDocMailer](https://github.com/Guru-1205/AutoDocMailer)
- - [EventTextGen](https://github.com/Guru-1205/EventTextGen)
 
 ## Table of Contents
 - [👋 Introduction](#introduction)
